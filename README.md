@@ -5,9 +5,13 @@ Home: https://github.com/census-instrumentation/opencensus-python
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/opencensus-feedstock/blob/master/LICENSE.txt)
 
 Summary: OpenCensus - A stats collection and distributed tracing framework
+
+Development: https://github.com/census-instrumentation/opencensus-python
+
+Documentation: https://opencensus.io/quickstart/python/
 
 OpenCensus makes getting critical telemetry out of your services easy and seamless.
 OpenCensus currently provides libraries for a number of languages that allow you to capture,
