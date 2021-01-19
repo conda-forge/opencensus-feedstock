@@ -19,8 +19,8 @@ requirements:
     - pip
   run:
     - python
-    - opencensus-context
-    - google-api-core
+    - opencensus-context ==0.1.2
+    - google-api-core >=1.0.0, <2.0.0
 
 test:
   imports:
