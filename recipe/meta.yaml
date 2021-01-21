@@ -1,4 +1,4 @@
-{% set version = "0.7.11" %}
+{% set version = "0.7.12" %}
 
 package:
   name: opencensus
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/census-instrumentation/opencensus-python/archive/v{{ version }}.zip
-  sha256: 739a3cd1c4b30f08d98d3e0ad2be205feee633122461f9cf3170f32ee023fa73
+  sha256: 5398146f03de64588f95b762bc198c3bb986a732e77ddef83c10b38474ee633b
 
 build:
   noarch: python
@@ -19,8 +19,8 @@ requirements:
     - pip
   run:
     - python
-    - opencensus-context
-    - google-api-core
+    - opencensus-context ==0.1.2
+    - google-api-core >=1.0.0, <2.0.0
 
 test:
   imports:
@@ -47,3 +47,4 @@ about:
 extra:
   recipe-maintainers:
     - basnijholt
+    - dhirschfeld
