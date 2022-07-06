@@ -19,7 +19,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - opencensus-context ==0.1.2
+    - opencensus-context >=0.1.2
     - google-api-core >=1.0.0, <3.0.0
 
 test:
