@@ -1,4 +1,4 @@
-{% set version = "0.11.2" %}
+{% set version = "0.11.3" %}
 
 package:
   name: opencensus
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/census-instrumentation/opencensus-python/archive/v{{ version }}.zip
-  sha256: 7835c0f3b1aaddb27aaebf434e1b7866841ff1a9185c4c36200dd0631ca9d06b
+  sha256: 9433bef8422af28e87a9eb3b123e3a97a8ca410a26fb40f3f4e481486b28bd90
 
 build:
   noarch: python
