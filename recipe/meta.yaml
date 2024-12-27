@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/census-instrumentation/opencensus-python/archive/v{{ version }}.zip
-  sha256: 9433bef8422af28e87a9eb3b123e3a97a8ca410a26fb40f3f4e481486b28bd90
+  sha256: fe5f55edc468b53418aeb64417fef9f5b6eee61e0f705444749dd008f112a75d
 
 build:
   noarch: python
