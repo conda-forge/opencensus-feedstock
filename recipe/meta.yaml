@@ -6,23 +6,26 @@ package:
 
 source:
   url: https://github.com/census-instrumentation/opencensus-python/archive/v{{ version }}.zip
-  sha256: 9433bef8422af28e87a9eb3b123e3a97a8ca410a26fb40f3f4e481486b28bd90
+  sha256: fe5f55edc468b53418aeb64417fef9f5b6eee61e0f705444749dd008f112a75d
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - opencensus-context >=0.1.3
     - google-api-core >=1.0.0, <3.0.0
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - opencensus
 
